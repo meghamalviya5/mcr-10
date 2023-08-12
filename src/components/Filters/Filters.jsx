@@ -2,7 +2,13 @@ import React, { useContext } from "react";
 import { InventoryContext } from "../../contexts/InventoryContext";
 
 const Filters = () => {
-  const { dispatch, departments } = useContext(InventoryContext);
+  const {
+    state: {
+      filters: { filterByDept },
+    },
+    dispatch,
+    departments,
+  } = useContext(InventoryContext);
 
   return (
     <div className="flex flex-space-between filter">
@@ -17,7 +23,9 @@ const Filters = () => {
         >
           <option value="all">All Departments</option>
           {departments.map((department) => (
-            <option value={department}>{department}</option>
+            <option value={department} selected={filterByDept === department}>
+              {department}
+            </option>
           ))}
         </select>
       </div>
