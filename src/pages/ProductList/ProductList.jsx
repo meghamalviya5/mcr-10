@@ -1,13 +1,24 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import ProductHeader from "../../components/ProductHeader/ProductHeader";
 import { InventoryContext } from "../../contexts/InventoryContext";
 import "./ProductList.css";
+import { useParams } from "react-router-dom";
 
 const ProductList = () => {
+  const { departmentName } = useParams();
+
   const {
     state: { inventoryData },
     filteredProducts,
+    dispatch,
   } = useContext(InventoryContext);
+
+  useEffect(() => {
+    dispatch({
+      type: "UPDATE_FILTERS",
+      payload: { key: "filterByDept", value: departmentName },
+    });
+  }, []);
 
   return (
     <div>

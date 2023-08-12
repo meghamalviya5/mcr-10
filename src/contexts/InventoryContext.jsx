@@ -33,6 +33,9 @@ const InventoryProvider = ({ children }) => {
         (inventory) => inventory.department === state.filters.filterByDept
       );
     }
+    if (state.filters.filterByDept === "all") {
+      filteredProducts = state.inventoryData;
+    }
   }
 
   if (state.filters.filterByLowStock === true) {

@@ -15,7 +15,7 @@ const Filters = () => {
             })
           }
         >
-          <option>All Departments</option>
+          <option value="all">All Departments</option>
           {departments.map((department) => (
             <option value={department}>{department}</option>
           ))}
