@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 
 const ProductHeader = () => {
   return (
-    <div>
+    <div className="flex flex-space-between">
       <h3>Products</h3>
       <Filters />
-      <Link to="/addNewProduct">New</Link>
+      <Link className="link btn new-btn" to="/addNewProduct">
+        New
+      </Link>
     </div>
   );
 };

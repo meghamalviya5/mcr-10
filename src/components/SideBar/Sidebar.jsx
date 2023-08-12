@@ -1,18 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
     <div>
-      <ul>
+      <ul className="flex flex-dir-col flex-gap-4">
         <li>
-          <Link to="/">Dashboard</Link>
+          <NavLink className="link side-links" to="/">
+            Dashboard
+          </NavLink>
         </li>
         <li>
-          <Link to="/departments">Departments</Link>
+          <NavLink className="link side-links" to="/departments">
+            Departments
+          </NavLink>
         </li>
         <li>
-          <Link to="/productList/all">Products</Link>
+          <NavLink className="link side-links" to="/productList/all">
+            Products
+          </NavLink>
         </li>
       </ul>
     </div>

@@ -1,0 +1,7 @@
+.side-links {
+  color: lightgray;
+}
+
+.side-links:active {
+  color: white;
+}

@@ -9,7 +9,7 @@
   --black-color: #282828;
   --white-color: #fff;
   --lynx-white-color: #f7f7f7;
-  --violet-color: #5348c7;
+  --dark-grey-color: #202124;
   --lynx-gray-color: #c5c5c5;
   --font: "Open Sans", sans-serif;
   --xxl-size: 4rem;
@@ -59,7 +59,7 @@ button {
 
 .btn {
   color: white;
-  background-color: #f65858;
+  background-color: skyblue;
   border-radius: 0.6rem;
   outline: none;
   border: none;

@@ -1,0 +1,17 @@
+.info-card {
+  background-color: rgb(235, 233, 233);
+  border-radius: 0.6rem;
+  padding: 1.5rem;
+}
+
+.stock {
+  color: green;
+}
+
+.delivered {
+  color: orange;
+}
+
+.low-stock {
+  color: red;
+}

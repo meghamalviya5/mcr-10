@@ -12,8 +12,8 @@ const ProductList = () => {
   return (
     <div>
       <ProductHeader />
-      <table>
-        <tr>
+      <table className="table-products">
+        <tr className="tr-head">
           <th>Image</th>
           <th>Name</th>
           <th>Description</th>

@@ -8,8 +8,10 @@ const Departments = () => {
   return (
     <div className="flex flex-gap-2">
       {departments.map((department) => (
-        <div>
-          <Link to={`/productList/${department}`}>{department}</Link>
+        <div className="info-card">
+          <Link className="link fw-bold" to={`/productList/${department}`}>
+            {department}
+          </Link>
         </div>
       ))}
     </div>

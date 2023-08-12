@@ -2,3 +2,22 @@
   width: 10rem;
   height: 10rem;
 }
+
+.table-products {
+  border: 1px solid lightgrey;
+}
+
+.tr-head {
+  background-color: lightgrey;
+  border-collapse: collapse;
+}
+
+tr {
+  border: 1px solid lightgrey;
+  /* border-collapse: collapse; */
+}
+
+td {
+  width: 12rem;
+  padding: 1rem;
+}

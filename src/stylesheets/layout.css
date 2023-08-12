@@ -1,10 +1,12 @@
+@import url("./base.css");
+
 main {
   grid-area: content;
   padding: 20px;
 }
 aside {
   grid-area: sidebar;
-  margin: 0 auto;
+  background-color: var(--dark-grey-color);
 }
 
 .wrapper {
