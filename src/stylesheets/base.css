@@ -59,7 +59,7 @@ button {
 
 .btn {
   color: white;
-  background-color: skyblue;
+  background-color: var(--action-color);
   border-radius: 0.6rem;
   outline: none;
   border: none;

@@ -7,9 +7,11 @@ const ProductHeader = () => {
     <div className="flex flex-space-between">
       <h3>Products</h3>
       <Filters />
-      <Link className="link btn new-btn" to="/addNewProduct">
-        New
-      </Link>
+      <div className="btn p-s">
+        <Link className="link " to="/addNewProduct">
+          New
+        </Link>
+      </div>
     </div>
   );
 };
